@@ -1,0 +1,364 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* agregado ultimo*/
+.contenedor{
+    width: 100%;
+    height: 100vh;
+}
+.encabezado{
+    height: 100vh;
+    width: 100%;
+    background:black;
+   
+}
+
+.contenedor-header{
+    display: flex;
+    width:100%;
+    /*
+    height:calc(100%-80px);
+    */
+    height: 80vh;
+    justify-content:center;
+    align-items: center;
+    
+}
+.contenedor-deburguese{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    width:  40%;
+    height: 50%;     
+}
+.imagen-bar{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    width: 40%;
+    height: 50%;
+    
+    
+}
+.boca{
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+       
+}
+
+H1{  
+    text-shadow: 0 0 5px orange, 0 0 30px orange,0 0 50px orange;
+    padding: 20px 0px;
+    
+}
+
+p{
+    color: #fff;
+    padding: 10px;
+    margin: 5px 20px;
+    font-size: 1.0rem;
+}
+/*final header*/
+/*banner*/
+.banner{
+    background: url(/img/banner1.jpg)no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30vh;
+    width: 100%;   
+    text-align: center;  
+        
+}
+.banner h3,.banner2 h3{
+    background: rgba(0, 0 , 0, .5);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color:white;
+    height: 100%;
+    padding-top: 6%;   
+    
+}
+.banner a{
+    color: #FEA429;
+    font-size: 30px;
+}
+
+
+
+/*Segunda Seccion*/
+.segunda-seccion{
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+    background: #FEA429;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    padding-bottom: 30px;
+}
+.segunda-seccion p{
+    font-size: 1.3rem;
+}
+.contenedor-fotos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;    
+    flex-wrap: wrap;
+}
+.fotos-seccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 17%;
+}
+.fotos-seccion p{
+    width: 100%;
+}
+.fotos-seccion img{
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999
+}
+/*banner2*/
+.banner2{
+    background: url(/img/banner2.jpg)no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30vh;
+    width: 100%;   
+    text-align: center;        
+}
+/*FOOTER*/
+.pie-pagina{
+  width: 100%;
+  background:black;      
+}
+
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.deburguese-footer{
+    text-shadow: 0 0 5px orange, 0 0 30px orange,0 0 50px orange;
+    font-size: 2.1rem;  
+    text-align: center; 
+    line-height: 120px;
+}
+.pie-pagina .grupo1 .box h2 {
+    color: rgb(250, 245, 245);
+    margin-bottom: 25px;
+}
+.pie-pagina .grupo1 .box h4{
+    color: white;
+    margin-bottom: 5px;    
+}
+.pie-pagina .grupo1 .red-social i{
+    color: #fff;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;   
+    transition: all 320ms ease;
+    font-size: 25px;
+}
+.pie-pagina .grupo1 .red-social i:hover{
+color: #FEA429;
+}
+.pie-pagina .grupo2{
+    background: rgb(10, 10, 10);
+    color: rgb(202, 192, 192);
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+
+
+
+/*MEDIAQUERY*/
+
+@media(min-width: 769px) and (max-width: 1200px){
+    .contenedor{
+        margin: 0%;
+        padding: 0%;
+    }
+    .contenedor-header{
+        height: 100vh;
+        width: 100%;
+        
+    }
+    .contenedor-deburguese{
+        width: 100%;
+    }
+    .imagen-bar{
+        width: 80%;
+    }
+    
+    
+    .fotos-seccion img{
+        width: 150%;
+    }
+    
+   
+     h1{
+         margin: 0%;
+     }
+
+
+}
+
+
+
+@media(min-width: 401px) and (max-width: 768px){
+    .contenedor-header{
+        display: flex;
+        flex-direction: column;
+        height: 120vh;
+        width: 100%;
+
+    }
+    
+    .contenedor-deburguese{
+        width: 100%;
+        
+    }
+    .contenedor-deburguese p{
+        font-size: 0.9rem;
+        padding: 0%;
+    }
+    
+    p{
+        font-size: 1.1rem;
+    }
+    h1{
+        
+        margin-top: 3vh;
+    }
+  
+    .boca{
+        height: 24vh;
+        border-radius: 100%;
+        margin-bottom: 10px;
+       
+    }
+    
+    
+
+    /**/
+   
+    .segunda-seccion{
+        height: 200vh;
+         width: 100%;
+         overflow: hidden;
+     }
+ 
+     .contenedor-fotos{
+         display: flex;
+         flex-direction: column;        
+         background: #FEA429;     
+        
+     }
+     .fotos-seccion{
+         display: flex;
+         flex-direction: column;
+         width: 100%;       
+         
+     }
+     .fotos-seccion p{
+        text-align: center;
+        justify-content: center;
+    }
+    
+    
+   
+    /*footer*/
+    .pie-pagina .grupo1{
+        width: 100%;       
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        text-align: center;
+    }
+    
+}
+/**/
+
+@media(max-width: 400px) {
+
+    .contenedor-header{
+        display: flex;
+        flex-direction: column;
+        height: 128vh;
+        width: 100%;
+
+    }
+    .contenedor-deburguese{
+        width: 100%;
+    }
+    .contenedor-deburguese p{
+        font-size: 0.7rem;
+    }
+    
+    p{
+        font-size: 1.0rem;
+    }
+    h1{
+        
+        margin-top: 8vh;
+    }
+    .boca{
+        height: 20vh;
+        border-radius: 100%;
+        margin-bottom: 10px;
+       
+    }
+    
+
+    /**/
+    .segunda-seccion{
+        height: 220vh;
+         width: 100%;
+         
+     }
+ 
+     .contenedor-fotos{
+         display: flex;
+         flex-direction: column;        
+         background: #FEA429;
+         width: 100%;
+         
+        
+     }
+     .fotos-seccion{
+         display: flex;
+         flex-direction: column;
+         width: 100%;    
+     }
+     .fotos-seccion img{
+         width: 100%;
+     }
+     
+    /*footer*/
+    
+    .pie-pagina .grupo1{
+        height: 100vh;
+        width: 100%;       
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        text-align: center;
+    }
+   
+}
+
+
+

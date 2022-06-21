@@ -1,0 +1,142 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+nav{
+    background: #FEA429;
+    height: 80px;
+    width: 100%;
+    font-weight: 600;
+    
+}
+.enlace{
+    position:relative;
+    padding: 5px 50px;
+    
+}
+
+.logo{
+    height: 70px;
+    padding-top: 10px;
+    margin-left: 5rem;
+   
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 5px;
+}
+
+nav ul li a{
+
+    color: #0a0a0a;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    
+}
+li a:hover{
+    color: #fff;
+    transition: .5s;
+
+}
+
+
+.checkbtn{
+    font-size: 25px;
+    color: #0a0a0a;
+    float: right;
+    margin-top: 30px;
+    margin-right: 40px;     
+    cursor: pointer;
+    display: none;
+   
+}
+#check{
+    display: none;
+}
+
+section{
+    background: url(/img/pexels-jakub-pabis-11074304.jpg) no-repeat;
+    width: 100%;
+    height: calc(100vh - 80px) ;
+    background-size: cover;
+    background-position: center center;
+  
+}
+
+@media (min-width:901px) and (max-width: 1200px){
+   .enlace{
+       padding-left: 20px;
+   }
+    nav ul li a{
+        font-size: 13px;
+    }
+
+}
+
+@media  (max-width: 900px){
+   
+    .checkbtn{
+        display: block;
+    }
+    
+    
+    ul{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background:#FEA429 ;
+       
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 30px;
+        
+    }
+    li a:hover{
+        color:#fff;
+
+        transition: .5s;    
+    }
+    
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
+   
+
+    .logo{
+        margin: 0;
+        padding: 0;
+    }   
+
+}
+
+
+
+
+
+
