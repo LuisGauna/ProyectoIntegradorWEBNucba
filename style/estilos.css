@@ -256,9 +256,10 @@ color: #FEA429;
     /**/
    
     .segunda-seccion{
-        height: 210vh;
+        height: 160vh;
          width: 100%;
-         overflow: hidden;
+        /* overflow: hidden;*/
+        justify-content: space-evenly;
      }
  
      .contenedor-fotos{
@@ -325,8 +326,9 @@ color: #FEA429;
 
     /**/
     .segunda-seccion{
-        height: 218vh;
+        height: 170vh;
          width: 100%;
+         justify-content: space-evenly;
          
      }
  
